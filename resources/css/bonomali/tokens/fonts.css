@@ -1,0 +1,14 @@
+/* ============================================================
+   Bonomali — Webfonts
+   Three families, two languages, one voice.
+   · Nunito       — everyday: display + body (EN, UI)
+   · Fraunces     — poetic accent (EN, italic only)
+   · Anek Bangla  — Bangla, first-class native script
+   All three are free/open-source (Google Fonts). The brand
+   guideline recommends self-hosting subsetted WOFF2 in
+   production; here we load them from Google's CDN so the
+   system is portable. Swap these @font-face sources for
+   self-hosted WOFF2 when shipping the live site.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400;1,9..144,500&family=Anek+Bangla:wght@300;400;500;600;700;800&display=swap');

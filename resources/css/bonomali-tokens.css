@@ -1,0 +1,12 @@
+/* ============================================================
+   Bonomali Design System — manifest
+   Mirrors the source design system's styles.css entry point.
+   Source: "Bonomali full website build"/_ds/.../styles.css
+   ============================================================ */
+
+@import './bonomali/tokens/fonts.css';
+@import './bonomali/tokens/colors.css';
+@import './bonomali/tokens/typography.css';
+@import './bonomali/tokens/spacing.css';
+@import './bonomali/tokens/effects.css';
+@import './bonomali/tokens/base.css';

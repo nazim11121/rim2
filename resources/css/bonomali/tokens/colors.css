@@ -1,0 +1,57 @@
+/* ============================================================
+   Bonomali — Colour system
+   "A forest palette, balanced for the page."
+   Two anchors. Eight supports. One canvas.
+   Balance with the 60 / 30 / 10 rule:
+     60% Canvas · 30% Bark · 10% Gold.
+   Print system is CMYK only — no Pantone is maintained.
+   ============================================================ */
+
+:root {
+  /* ---- Primary anchors -------------------------------------- */
+  --gold:          #BC8832;   /* Bonomali Gold — accents, the bird */
+  --gold-soft:     #D4A85A;   /* Gold Soft — tints & hover */
+  --bark:          #3F1B0E;   /* Mangrove Bark — text, dark panels */
+  --canvas:        #F6F0E4;   /* Canvas — the page itself */
+  --canvas-deep:   #EBE3D2;   /* Canvas Deep — alternate ground */
+
+  /* ---- Supporting palette · the forest ---------------------- */
+  --forest-deep:   #1B2415;   /* canopy black — deepest dark */
+  --mangrove:      #2E3D24;   /* forest mid-green */
+  --nipa:          #5E7A3A;   /* Nipa Palm — accent green */
+  --moss:          #8A9A6B;   /* Moss — soft green */
+  --canal:         #7E8B7A;   /* Canal Water — river grey */
+  --driftwood:     #6D4539;   /* Driftwood — warm wood, muted text */
+  --silt:          #C9BBA3;   /* River Silt — sand tone */
+  --ink:           #2A1810;   /* Ink — near-black warm, max contrast */
+
+  /* ---- Semantic surfaces ------------------------------------ */
+  --surface-page:      var(--canvas);
+  --surface-alt:       var(--canvas-deep);
+  --surface-card:      #FFFFFF;
+  --surface-inverse:   var(--bark);
+  --surface-forest:    var(--forest-deep);
+
+  /* ---- Semantic text ---------------------------------------- */
+  --text-body:         var(--bark);
+  --text-muted:        var(--driftwood);
+  --text-inverse:      var(--canvas);
+  --text-inverse-soft: var(--silt);
+  --text-accent:       var(--gold);
+  --text-on-gold:      var(--bark);
+
+  /* ---- Lines & borders -------------------------------------- */
+  --line:            rgba(63, 27, 14, 0.12);   /* hairline on canvas */
+  --line-strong:     rgba(63, 27, 14, 0.24);
+  --line-inverse:    rgba(188, 136, 50, 0.35); /* gold hairline on dark */
+
+  /* ---- Accent washes (tints of gold/bark) ------------------- */
+  --gold-wash:       rgba(188, 136, 50, 0.06);
+  --gold-wash-2:     rgba(188, 136, 50, 0.14);
+  --bark-wash:       rgba(63, 27, 14, 0.05);
+
+  /* ---- Status (used sparingly; drawn from the palette) ------ */
+  --positive:        var(--nipa);    /* "do" / confirmed */
+  --critical:        #B03A2E;        /* "don't" / error — clay red */
+  --notice:          var(--gold);    /* attention */
+}

@@ -1,0 +1,74 @@
+/* ============================================================
+   Bonomali — Base reset & element defaults
+   Minimal, calm defaults built on the tokens. Sets the page
+   to Canvas, body text to Bark, and the two-language voice.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--surface-page);
+  color: var(--text-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls-normal);
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+/* ---- Headings — Nunito Black, tight ----------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text-body);
+  letter-spacing: var(--ls-tight);
+}
+h1 { font-weight: var(--fw-black); font-size: var(--fs-h1); line-height: var(--lh-tight); letter-spacing: var(--ls-display); }
+h2 { font-weight: var(--fw-black); font-size: var(--fs-h2); line-height: var(--lh-snug); }
+h3 { font-weight: var(--fw-extrabold); font-size: var(--fs-h3); }
+h4 { font-weight: var(--fw-bold); font-size: var(--fs-h4); letter-spacing: 0.01em; }
+
+p { margin: 0 0 1rem; max-width: var(--measure); }
+
+/* Fraunces carries the emotional voice — italic, light. */
+em { font-family: var(--font-serif); font-style: italic; font-weight: var(--fw-regular); color: var(--text-muted); }
+strong { font-weight: var(--fw-extrabold); color: var(--text-body); }
+
+/* ---- Links — gold, settling to bark on hover -------------------- */
+a {
+  color: var(--text-accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-inverse);
+  transition: color var(--dur-fast) var(--ease-out),
+              border-color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--text-body); border-bottom-color: var(--text-body); }
+
+/* ---- Bangla — first-class native script ------------------------- */
+:lang(bn), .bn { font-family: var(--font-bangla); }
+
+/* ---- Selection -------------------------------------------------- */
+::selection { background: var(--gold-wash-2); color: var(--bark); }
+
+/* ---- Keyboard focus — a quiet gold ring ------------------------- */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+/* ---- Reduced motion -------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

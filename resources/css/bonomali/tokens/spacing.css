@@ -1,0 +1,36 @@
+/* ============================================================
+   Bonomali — Spacing & layout
+   A calm, unhurried rhythm. Generous negative space is part
+   of the brand — "privacy is the real luxury" applies to
+   the page, too.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (4px base, but the brand breathes) ----- */
+  --space-0:    0;
+  --space-1:    4px;
+  --space-2:    8px;
+  --space-3:    12px;
+  --space-4:    16px;
+  --space-5:    24px;
+  --space-6:    32px;
+  --space-7:    48px;
+  --space-8:    64px;
+  --space-9:    96px;    /* section padding — the brand's signature breath */
+  --space-10:  128px;
+
+  /* ---- Section & page rhythm -------------------------------- */
+  --section-pad-y:   var(--space-9);
+  --section-pad-x:   56px;
+  --content-max:     1180px;   /* editorial measure */
+  --measure:         74ch;     /* body text line length */
+  --measure-narrow:  40ch;     /* pull-quote line length */
+
+  /* ---- Component spacing ------------------------------------ */
+  --gap-tight:   var(--space-2);
+  --gap:         var(--space-4);
+  --gap-loose:   var(--space-6);
+
+  /* ---- Container gutters on small screens ------------------- */
+  --gutter:      28px;
+}
